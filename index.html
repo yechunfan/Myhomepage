@@ -39,10 +39,15 @@
 				opacity: 1;
 			}
 		}
-		.button {
-			display: inline-block;
-			padding: 0.5em 1em;
+		.button-wrapper {
+			display: block;
 			margin: 10% auto;
+			text-align: center;
+		}
+		.button {
+			display: block;
+			padding: 0.5em 1em;
+			margin-bottom: 1em;
 			border: 2px solid rgba(192, 192, 192, 0.5);
 			border-radius: 5px;
 			background-color: rgba(192, 192, 192, 0.3);
@@ -60,7 +65,7 @@
 	</style>
 </head>
 <body>
-	<div style="text-align:center;">
+	<div style="display: flex; flex-direction: column; justify-content: center; align-items: center; height: 100vh;">
 		<button class="button" onclick="location.href='https://chat.openai.com/'">ChatGPT</button>
 		<button class="button" onclick="location.href='https://opensea.io/'">NFT</button>
 		<button class="button" onclick="location.href='https://github.com/'">GitHub</button>
