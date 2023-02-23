@@ -1,0 +1,49 @@
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+#background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url("backpic1.jpg");
+  background-size: cover;
+  animation: background 15s infinite;
+}
+
+#menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 33%;
+  padding: 0 20%;
+  font-size: 2em;
+  color: white;
+}
+
+#menu a {
+  text-decoration: none;
+  color: white;
+}
+
+@keyframes background {
+  0% {
+    background-image: url("backpic1.jpg");
+  }
+  50% {
+    background-image: url("backpic2.jpg");
+  }
+  100% {
+    background-image: url("backpic3.jpg");
+  }
+}
+
+@media (max-width: 600px) {
+  #menu {
+    padding: 0 10%;
+    font-size: 1.5em;
+  }
+}
