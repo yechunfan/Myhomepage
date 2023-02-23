@@ -1,26 +1,70 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="UTF-8">
-    <title>Youetek</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
-  </head>
-  <body>
-    <div id="background"></div>
-    <div id="menu">
-      <a href="https://chat.openai.com/" target="_blank">
-        <div class="button">ChatGPT</div>
-      </a>
-      <a href="https://opensea.io/" target="_blank">
-        <div class="button">NFT</div>
-      </a>
-      <a href="https://github.com/" target="_blank">
-        <div class="button">GitHub</div>
-      </a>
-      <a href="https://www.arduino.cn/" target="_blank">
-        <div class="button">Arduino</div>
-      </a>
-    </div>
-    <script src="script.js"></script>
-  </body>
+<head>
+	<title>youetek</title>
+	<style>
+		body {
+			margin: 0;
+			padding: 0;
+			background-image: url("backpic1.jpg");
+			background-size: cover;
+			background-repeat: no-repeat;
+			animation: fadeInOut 15s linear infinite;
+		}
+		@keyframes fadeInOut {
+			0% {
+				opacity: 1;
+			}
+			16.666% {
+				opacity: 1;
+			}
+			33.333% {
+				background-image: url("backpic2.jpg");
+				opacity: 1;
+			}
+			50% {
+				background-image: url("backpic2.jpg");
+				opacity: 1;
+			}
+			66.666% {
+				background-image: url("backpic3.jpg");
+				opacity: 1;
+			}
+			83.333% {
+				background-image: url("backpic3.jpg");
+				opacity: 1;
+			}
+			100% {
+				background-image: url("backpic1.jpg");
+				opacity: 1;
+			}
+		}
+		.button {
+			display: inline-block;
+			padding: 0.5em 1em;
+			margin: 10% auto;
+			border: 2px solid rgba(192, 192, 192, 0.5);
+			border-radius: 5px;
+			background-color: rgba(192, 192, 192, 0.3);
+			font-size: 24px;
+			font-weight: bold;
+			color: #fff;
+			text-align: center;
+			transition: background-color 0.3s ease-in-out;
+			width: 25%;
+		}
+		.button:hover {
+			background-color: rgba(192, 192, 192, 0.5);
+			cursor: pointer;
+		}
+	</style>
+</head>
+<body>
+	<div style="text-align:center;">
+		<button class="button" onclick="location.href='https://chat.openai.com/'">ChatGPT</button>
+		<button class="button" onclick="location.href='https://opensea.io/'">NFT</button>
+		<button class="button" onclick="location.href='https://github.com/'">GitHub</button>
+		<button class="button" onclick="location.href='https://www.arduino.cn/'">Arduino</button>
+	</div>
+</body>
 </html>
