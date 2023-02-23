@@ -20,30 +20,34 @@ html, body {
   align-items: center;
   height: 33%;
   padding: 0 20%;
-  font-size: 2em;
-  color: white;
 }
 
 #menu a {
   text-decoration: none;
-  color: white;
 }
 
-@keyframes background {
-  0% {
-    background-image: url("backpic1.jpg");
-  }
-  50% {
-    background-image: url("backpic2.jpg");
-  }
-  100% {
-    background-image: url("backpic3.jpg");
-  }
+.button {
+  border: 3px solid rgba(211, 211, 211, 0.5);
+  background-color: rgba(192, 192, 192, 0.5);
+  padding: 10px;
+  text-align: center;
+  font-size: 2em;
+  color: white;
+  text-shadow: 1px 1px 2px black;
+  transition: background-color 0.5s;
+}
+
+.button:hover {
+  background-color: rgba(128, 128, 128, 0.5);
 }
 
 @media (max-width: 600px) {
   #menu {
     padding: 0 10%;
+    height: 40%;
+  }
+
+  .button {
     font-size: 1.5em;
   }
 }
