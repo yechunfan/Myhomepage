@@ -16,6 +16,7 @@
 				opacity: 1;
 			}
 			16.666% {
+				background-image: url("backpic1.jpg");
 				opacity: 1;
 			}
 			33.333% {
@@ -63,6 +64,17 @@
 			cursor: pointer;
 		}
 	</style>
+		<script>
+		// 预加载所有图片
+		var images = [];
+		function preloadImages() {
+			for (var i = 1; i <= 3; i++) {
+				images[i] = new Image();
+				images[i].src = "backpic" + i + ".jpg";
+			}
+		}
+		window.onload = preloadImages;
+		</script>
 </head>
 <body>
 	<div style="display: flex; flex-direction: column; justify-content: center; align-items: center; height: 100vh;">
